@@ -22,5 +22,5 @@ func (k msgServer) CreatePost(goCtx context.Context, msg *types.MsgCreatePost) (
 	//Add a post to the store and get back ID
 	id := k.AppendPost(ctx, post)
 
-	return &types.MsgCreatePostResponse{ID: id}, nil
+	return &types.MsgCreatePostResponse{Id: id}, nil
 }
