@@ -39,10 +39,11 @@ message QueryPostsRequest {
 }
 
 message QueryPostsResponse {
-  string title = 1;
-  string body = 2;
-  // Adding pagination to response
-  cosmos.base.query.v1beta1.PageResponse pagination = 2;
+   // Returning a list of posts
+   repeated Post Post = 1;
+
+   // Adding pagination to response
+   cosmos.base.query.v1beta1.PageResponse pagination = 2;
 }
 
 // this line is used by starport scaffolding # 3
