@@ -21,7 +21,7 @@ func (k Keeper) Comments(goCtx context.Context, req *types.QueryCommentsRequest)
 	var comments []*types.Comment
 
 	// Get context with the information about the environment
-	ctx := sdk.UnwrapSDKContext(c)
+	ctx := sdk.UnwrapSDKContext(goCtx)
 
 	// Get the key-value module store using the store key (in this case store key is "chain")
 	store := ctx.KVStore(k.storeKey)
