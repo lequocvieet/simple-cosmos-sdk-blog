@@ -32,8 +32,8 @@ paths:
                       type: string
                       format: uint64
                     createdAt:
-                      type: integer
-                      format: int32
+                      type: string
+                      format: int64
               pagination:
                 type: object
                 properties:
@@ -164,8 +164,8 @@ paths:
                     type: string
                     format: uint64
                   createdAt:
-                    type: integer
-                    format: int32
+                    type: string
+                    format: int64
         default:
           description: An unexpected error response.
           schema:
@@ -30804,8 +30804,10 @@ definitions:
         type: string
         format: uint64
       createdAt:
-        type: integer
-        format: int32
+        type: string
+        format: int64
+  blog.blog.MsgCreateCommentResponse:
+    type: object
   blog.blog.MsgCreatePostResponse:
     type: object
     properties:
@@ -30848,8 +30850,8 @@ definitions:
               type: string
               format: uint64
             createdAt:
-              type: integer
-              format: int32
+              type: string
+              format: int64
       pagination:
         type: object
         properties:
@@ -30894,8 +30896,8 @@ definitions:
             type: string
             format: uint64
           createdAt:
-            type: integer
-            format: int32
+            type: string
+            format: int64
   blog.blog.QueryParamsResponse:
     type: object
     properties:
